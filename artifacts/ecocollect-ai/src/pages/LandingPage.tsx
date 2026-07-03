@@ -42,9 +42,14 @@ export default function LandingPage() {
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Fonctionnalités</a>
             <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">Comment ça marche</a>
           </div>
-          <Link href="/citoyen/nouveau-signalement" onClick={() => setRole('citoyen')}>
+          <Link href="/login">
+            <Button variant="ghost" className="rounded-full px-5 hidden md:flex">
+              Connexion
+            </Button>
+          </Link>
+          <Link href="/register">
             <Button variant="default" className="rounded-full px-6">
-              Signaler un dépôt
+              Créer un compte
             </Button>
           </Link>
         </div>

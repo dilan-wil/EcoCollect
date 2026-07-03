@@ -25,6 +25,8 @@ import MissionDetail from "./pages/agent/MissionDetail"
 
 import Profil from "./pages/Profil"
 import Notifications from "./pages/Notifications"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
 
 function NotFound() {
   return (
@@ -63,6 +65,10 @@ function Router() {
       {/* Agent Routes */}
       <Route path="/agent/dashboard" component={AgentDashboard} />
       <Route path="/agent/mission/:id" component={MissionDetail} />
+
+      {/* Auth Routes */}
+      <Route path="/login" component={Login} />
+      <Route path="/register" component={Register} />
 
       {/* Shared Routes */}
       <Route path="/profil" component={Profil} />
