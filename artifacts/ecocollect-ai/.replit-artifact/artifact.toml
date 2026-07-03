@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "EcoCollect AI"
+version = "1.0.0"
+id = "artifacts/ecocollect-ai"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18287
+
+[services.development]
+run = "pnpm --filter @workspace/ecocollect-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ecocollect-ai", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ecocollect-ai/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18287"
+BASE_PATH = "/"

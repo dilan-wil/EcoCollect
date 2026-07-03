@@ -1,0 +1,1815 @@
+Build a modern, production-quality responsive web application prototype in french called **EcoCollect AI**.
+
+
+
+This is **ONLY a frontend prototype**.
+
+
+
+**DO NOT build any backend.**
+
+**DO NOT use a database.**
+
+**DO NOT create APIs.**
+
+
+
+Everything should use realistic mock data stored in JSON objects.
+
+
+
+The application should look like a real SaaS product ready for investors or university presentation.
+
+
+
+---
+
+
+
+# Tech Stack
+
+
+
+Use:
+
+
+
+* React
+
+* TypeScript
+
+* Vite
+
+* TailwindCSS
+
+* shadcn/ui
+
+* React Router
+
+* React Hook Form
+
+* Lucide Icons
+
+* Framer Motion animations
+
+* Recharts for charts
+
+* Leaflet for maps
+
+* Fake JSON data
+
+* Local React state only
+
+
+
+No backend.
+
+
+
+No Firebase.
+
+
+
+No SQL.
+
+
+
+No authentication.
+
+
+
+No API calls.
+
+
+
+Everything must work from mock data.
+
+
+
+---
+
+
+
+# Theme
+
+
+
+Modern government / smart city dashboard.
+
+
+
+Primary color:
+
+Green (#16A34A)
+
+
+
+Secondary:
+
+Blue (#2563EB)
+
+
+
+Neutral:
+
+White, Gray 50-900
+
+
+
+Rounded cards
+
+
+
+Beautiful shadows
+
+
+
+Glassmorphism on headers
+
+
+
+Responsive
+
+
+
+Professional animations
+
+
+
+---
+
+
+
+# User Roles
+
+
+
+The prototype contains three different experiences.
+
+
+
+## 1 Citizen
+
+
+
+Can:
+
+
+
+* Report illegal dumping
+
+* View report history
+
+* Track report status
+
+* View profile
+
+
+
+---
+
+
+
+## 2 Organization Administrator
+
+
+
+Can:
+
+
+
+* Dashboard
+
+* View reports
+
+* Assign collection missions
+
+* Manage agents
+
+* Manage vehicles
+
+* View analytics
+
+* View map
+
+* View AI validation
+
+* View clustering
+
+
+
+---
+
+
+
+## 3 Collection Agent
+
+
+
+Can:
+
+
+
+* See assigned missions
+
+
+
+* View mission details
+
+
+
+* Mark mission:
+
+
+
+* Pending
+
+
+
+* In Progress
+
+
+
+* Completed
+
+
+
+* View today's route
+
+
+
+---
+
+
+
+# Landing Page
+
+
+
+Beautiful homepage including:
+
+
+
+Hero section
+
+
+
+Large illustration
+
+
+
+Headline:
+
+
+
+"Smart Waste Collection Powered by Artificial Intelligence"
+
+
+
+Subtitle
+
+
+
+Buttons
+
+
+
+* Report Waste
+
+* Organization Portal
+
+
+
+Statistics section
+
+
+
+Example:
+
+
+
+12,450 Reports
+
+
+
+87% AI Validation
+
+
+
+93% Collection Success
+
+
+
+Interactive Map preview
+
+
+
+How it Works
+
+
+
+3 steps
+
+
+
+Citizen reports
+
+
+
+↓
+
+
+
+AI validates
+
+
+
+↓
+
+
+
+Organization collects
+
+
+
+Footer
+
+
+
+---
+
+
+
+# Citizen Pages
+
+
+
+## Dashboard
+
+
+
+Cards:
+
+
+
+My Reports
+
+
+
+Pending
+
+
+
+Validated
+
+
+
+Completed
+
+
+
+Rejected
+
+
+
+Recent Activity
+
+
+
+Map preview
+
+
+
+Progress chart
+
+
+
+---
+
+
+
+## New Report
+
+
+
+Large form
+
+
+
+Fields:
+
+
+
+Upload Photo
+
+
+
+Preview image
+
+
+
+GPS coordinates
+
+
+
+Latitude
+
+
+
+Longitude
+
+
+
+Address
+
+
+
+Waste Description
+
+
+
+Waste Type
+
+
+
+Dropdown
+
+
+
+Household
+
+
+
+Plastic
+
+
+
+Organic
+
+
+
+Construction
+
+
+
+Electronic
+
+
+
+Dangerous
+
+
+
+Estimated Volume
+
+
+
+Small
+
+
+
+Medium
+
+
+
+Large
+
+
+
+Submit button
+
+
+
+After submission
+
+
+
+Display fake AI processing animation
+
+
+
+Loading...
+
+
+
+Then display:
+
+
+
+AI Result
+
+
+
+Waste Detected
+
+
+
+Confidence
+
+
+
+97%
+
+
+
+Accumulation Level
+
+
+
+Medium
+
+
+
+Status
+
+
+
+Validated
+
+
+
+Everything is fake.
+
+
+
+---
+
+
+
+## My Reports
+
+
+
+Table
+
+
+
+Photo
+
+
+
+Date
+
+
+
+Location
+
+
+
+Status
+
+
+
+AI Confidence
+
+
+
+Assigned Organization
+
+
+
+Buttons
+
+
+
+View
+
+
+
+---
+
+
+
+## Report Details
+
+
+
+Timeline
+
+
+
+Submitted
+
+
+
+Validated
+
+
+
+Assigned
+
+
+
+Collected
+
+
+
+Completed
+
+
+
+Map
+
+
+
+Images
+
+
+
+AI Analysis Card
+
+
+
+Confidence
+
+
+
+Objects detected
+
+
+
+Accumulation level
+
+
+
+Estimated cleanup time
+
+
+
+---
+
+
+
+# Organization Administrator
+
+
+
+## Dashboard
+
+
+
+Beautiful KPI cards
+
+
+
+Reports Received
+
+
+
+Open Reports
+
+
+
+Agents
+
+
+
+Vehicles
+
+
+
+Completed Today
+
+
+
+Charts
+
+
+
+Monthly reports
+
+
+
+Completion rate
+
+
+
+Average response time
+
+
+
+Top affected districts
+
+
+
+Heat map preview
+
+
+
+Recent activity
+
+
+
+---
+
+
+
+## Reports Management
+
+
+
+Large table
+
+
+
+Filters
+
+
+
+Status
+
+
+
+Priority
+
+
+
+District
+
+
+
+Date
+
+
+
+Cards include:
+
+
+
+Photo
+
+
+
+AI Confidence
+
+
+
+Waste Type
+
+
+
+Severity
+
+
+
+Estimated Volume
+
+
+
+GPS
+
+
+
+Status
+
+
+
+Actions
+
+
+
+Assign
+
+
+
+Reject
+
+
+
+View
+
+
+
+---
+
+
+
+## Report Details
+
+
+
+Large page
+
+
+
+Photo gallery
+
+
+
+Map
+
+
+
+Citizen information
+
+
+
+AI analysis
+
+
+
+Estimated waste level
+
+
+
+Priority score
+
+
+
+Nearby reports
+
+
+
+Assign mission button
+
+
+
+---
+
+
+
+## Mission Assignment
+
+
+
+Choose:
+
+
+
+Agent
+
+
+
+Vehicle
+
+
+
+Priority
+
+
+
+Scheduled Date
+
+
+
+Estimated Duration
+
+
+
+Save Assignment
+
+
+
+Everything updates fake state.
+
+
+
+---
+
+
+
+## Agents
+
+
+
+Cards
+
+
+
+Profile picture
+
+
+
+Name
+
+
+
+Status
+
+
+
+Completed missions
+
+
+
+Current mission
+
+
+
+Phone
+
+
+
+Button
+
+
+
+View Profile
+
+
+
+---
+
+
+
+## Vehicles
+
+
+
+Fleet cards
+
+
+
+Truck photo
+
+
+
+Registration
+
+
+
+Capacity
+
+
+
+Fuel level
+
+
+
+Availability
+
+
+
+Current assignment
+
+
+
+Maintenance status
+
+
+
+---
+
+
+
+## Smart Map
+
+
+
+Full screen Leaflet map
+
+
+
+Markers
+
+
+
+Green
+
+
+
+Completed
+
+
+
+Yellow
+
+
+
+Pending
+
+
+
+Red
+
+
+
+Critical
+
+
+
+Blue
+
+
+
+Assigned
+
+
+
+Click marker
+
+
+
+Popup
+
+
+
+Photo
+
+
+
+Status
+
+
+
+Confidence
+
+
+
+Organization
+
+
+
+Button
+
+
+
+View
+
+
+
+Heatmap effect
+
+
+
+Cluster markers
+
+
+
+Legend
+
+
+
+---
+
+
+
+## AI Validation
+
+
+
+Beautiful dashboard
+
+
+
+Large AI card
+
+
+
+Total Images
+
+
+
+Validated
+
+
+
+Rejected
+
+
+
+Average Confidence
+
+
+
+Detection Accuracy
+
+
+
+Charts
+
+
+
+Confidence distribution
+
+
+
+Waste categories
+
+
+
+Accumulation level
+
+
+
+Recent AI decisions
+
+
+
+Cards showing
+
+
+
+Image
+
+
+
+Confidence
+
+
+
+Objects detected
+
+
+
+Reason
+
+
+
+---
+
+
+
+## Clustering
+
+
+
+Show fake K-Means results
+
+
+
+Three colored zones
+
+
+
+Critical
+
+
+
+Medium
+
+
+
+Low
+
+
+
+Cards
+
+
+
+Cluster 1
+
+
+
+High density
+
+
+
+27 reports
+
+
+
+Cluster 2
+
+
+
+Medium
+
+
+
+15 reports
+
+
+
+Cluster 3
+
+
+
+Low
+
+
+
+6 reports
+
+
+
+Charts
+
+
+
+Pie
+
+
+
+Bar
+
+
+
+Map overlay
+
+
+
+---
+
+
+
+## Analytics
+
+
+
+Many charts
+
+
+
+Monthly reports
+
+
+
+Collection efficiency
+
+
+
+Average response time
+
+
+
+Waste types
+
+
+
+District comparison
+
+
+
+Top organizations
+
+
+
+Completion rate
+
+
+
+---
+
+
+
+# Collection Agent
+
+
+
+Dashboard
+
+
+
+Today's Missions
+
+
+
+Completed
+
+
+
+Remaining
+
+
+
+Route Map
+
+
+
+Mission cards
+
+
+
+Each mission
+
+
+
+Address
+
+
+
+Photo
+
+
+
+Waste Type
+
+
+
+Priority
+
+
+
+Navigation button
+
+
+
+Mission Details
+
+
+
+Before
+
+
+
+After
+
+
+
+Photos
+
+
+
+Timeline
+
+
+
+Buttons
+
+
+
+Start Mission
+
+
+
+Complete Mission
+
+
+
+---
+
+
+
+# Profile
+
+
+
+Avatar
+
+
+
+Name
+
+
+
+Email
+
+
+
+Role
+
+
+
+Statistics
+
+
+
+Recent Activity
+
+
+
+Settings UI
+
+
+
+Notifications
+
+
+
+Dark Mode Toggle
+
+
+
+Language
+
+
+
+---
+
+
+
+# Notifications
+
+
+
+Beautiful notification center
+
+
+
+AI validation completed
+
+
+
+Mission assigned
+
+
+
+Mission completed
+
+
+
+New report nearby
+
+
+
+---
+
+
+
+# Components
+
+
+
+Build reusable components
+
+
+
+Navbar
+
+
+
+Sidebar
+
+
+
+Breadcrumb
+
+
+
+Cards
+
+
+
+Tables
+
+
+
+Dialogs
+
+
+
+Forms
+
+
+
+Charts
+
+
+
+Timeline
+
+
+
+Statistics cards
+
+
+
+Status badges
+
+
+
+Upload component
+
+
+
+Image preview
+
+
+
+Map component
+
+
+
+AI Result card
+
+
+
+Mission card
+
+
+
+Vehicle card
+
+
+
+Agent card
+
+
+
+Report card
+
+
+
+Charts
+
+
+
+Loading skeletons
+
+
+
+Empty states
+
+
+
+---
+
+
+
+# Mock Data
+
+
+
+Create realistic mock JSON files
+
+
+
+Reports
+
+
+
+40+
+
+
+
+Agents
+
+
+
+12
+
+
+
+Vehicles
+
+
+
+8
+
+
+
+Organizations
+
+
+
+5
+
+
+
+Citizens
+
+
+
+20
+
+
+
+AI analyses
+
+
+
+50
+
+
+
+Clusters
+
+
+
+3
+
+
+
+Charts
+
+
+
+Monthly data
+
+
+
+Heatmap coordinates
+
+
+
+GPS coordinates around one city.
+
+
+
+---
+
+
+
+# Navigation
+
+
+
+Use React Router
+
+
+
+Landing
+
+
+
+Citizen
+
+
+
+Citizen Dashboard
+
+
+
+Citizen Reports
+
+
+
+Citizen New Report
+
+
+
+Admin Dashboard
+
+
+
+Reports
+
+
+
+Agents
+
+
+
+Vehicles
+
+
+
+Analytics
+
+
+
+AI Validation
+
+
+
+Map
+
+
+
+Clusters
+
+
+
+Agent Dashboard
+
+
+
+Profile
+
+
+
+Settings
+
+
+
+Notifications
+
+
+
+404 page
+
+
+
+---
+
+
+
+# UX
+
+
+
+Smooth transitions
+
+
+
+Hover effects
+
+
+
+Animated counters
+
+
+
+Page transitions
+
+
+
+Loading skeletons
+
+
+
+Toast notifications
+
+
+
+Modal dialogs
+
+
+
+Beautiful empty states
+
+
+
+Responsive mobile layout
+
+
+
+Tablet support
+
+
+
+Desktop optimized
+
+
+
+---
+
+
+
+# Code Quality
+
+
+
+Organize into folders:
+
+
+
+```
+
+src/
+
+  components/
+
+  pages/
+
+  layouts/
+
+  hooks/
+
+  data/
+
+  assets/
+
+  lib/
+
+  types/
+
+```
+
+
+
+Create reusable components.
+
+
+
+Avoid duplicated code.
+
+
+
+Use TypeScript interfaces everywhere.
+
+
+
+Use clean architecture.
+
+
+
+---
+
+
+
+# Important
+
+
+
+This is **only a frontend prototype**.
+
+
+
+There must be:
+
+
+
+* No backend
+
+* No authentication
+
+* No database
+
+* No API
+
+* No Flask
+
+* No SQL Server
+
+* No TensorFlow
+
+
+
+Instead, **simulate AI analysis**, mission assignments, clustering, dashboards, and report updates entirely with mock JSON data and local React state.
+
+
+
+The final result should look like a polished commercial Smart City SaaS application suitable for demonstrating an AI-powered waste collection management platform to professors, municipalities, or potential investors.
